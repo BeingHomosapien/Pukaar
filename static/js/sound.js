@@ -16,6 +16,7 @@ sound.addEventListener("click", () => {
         status.innerText = "OFF";
     } else {
         Array.from(audios).forEach((audio) => {
+            audio.play()
             audio.muted = false;
         })
         status.innerText = "ON";

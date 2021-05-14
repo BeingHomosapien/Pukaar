@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lacquer&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+:root {
+    --header-height: 3rem;
+    /*===== Colors =====*/
+    --first-color: #5B65F5;
+    --first-color-light: #C4C7F5;
+    --dark-color: #0E1026;
+    --white-color: #FBFBFB;
+    /*===== Font and typography =====*/
+    --body-font: 'Open Sans', sans-serif;
+    --nav-name-font-size: 1.5rem;
+    --normal-font-size: .938rem;
+    /*===== z index =====*/
+    --z-fixed: 100;
+}
+
+* {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100vw;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.home {
+    transition: ease-in 2s;
+    z-index: 100;
+    height: 100vh;
+    opacity: 1;
+}
+
+.sound {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1000;
+}
+
+#toggle {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 2.5vw;
+}
+
+
+overlay2{
+  background: #706ea8;
+  mix-blend-mode: overlay;
+}
+.container{
+  position: inherit;
+  top: 11vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container h1{
+  font-size: 3em;
+}
+
+.organiser{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.organiser .card {
+  display: flex;
+  flex-direction: column;
+  margin: 2vh 2vw;
+  width: 18vw;
+  height: 24vw;
+  max-width: 225px;
+  max-height: 315px;
+  padding: 9px;
+  background: var(--white-color);
+  border: 1px solid var(--dark-color);
+  padding-bottom: 15px;
+}
+
+.organiser img{
+  border: 1px solid var(--dark-color);
+  height: inherit;
+  width: auto;
+  overflow: hidden;
+}
+
+.organiser span{
+  color: var(--dark-color);
+  margin-top:5px;
+  margin-bottom: -9px;
+  text-align: center;
+}
+
+.organiser .card:hover{
+  transform: scale(1.1);
+}
+
+@media screen and (max-width:768px) {
+  .sound {
+    right: 15px;
+    bottom: 15px;
+  }
+  #toggle {
+    font-size: 2vh;
+  }
+
+  .container{
+    top: 18vh;
+  }
+
+  .organiser span{
+    font-size: 0.81em;
+  }
+
+  .organiser .card{
+    width: 30vw;
+    height: 45vw;
+    max-width: 300px;
+    max-height: 500px;
+  }
+
+}
