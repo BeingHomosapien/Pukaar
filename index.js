@@ -10,8 +10,8 @@ app.get("/", (req, res) => {
     res.render("index");
 })
 
-app.get("/contact", (req, res)=>{
-  res.render("contact")
+app.get("/team", (req, res)=>{
+  res.render("team")
 })
 
 app.listen(port, (err) => {
