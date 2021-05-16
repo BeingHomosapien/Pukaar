@@ -25,7 +25,5 @@ box[0].addEventListener("scroll",async (e)=>{
 
 })
 
-
-
 box[0].scrollBy(0,window.innerHeight/10)
 box[0].scrollBy(0,window.innerHeight/(-10))
