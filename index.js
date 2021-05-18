@@ -10,10 +10,6 @@ app.get("/", (req, res) => {
     res.render("index");
 })
 
-app.get("/team", (req, res)=>{
-  res.render("team")
-})
-
 app.listen(port, (err) => {
     if (err) {
         throw err;
